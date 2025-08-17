@@ -1,0 +1,28 @@
+<div id="<%= dom_id todo %>">
+  <p>
+    <label class="text-left text-xl font-bold">Name:</label>
+    <%= todo.name %>
+  </p>
+
+  <p>
+    <label class="text-left text-xl font-bold">Description:</label>
+    <%= todo.description %>
+  </p>
+
+  <p>
+    <label class="text-left text-xl font-bold">Completed:</label>
+    <%= todo.completed %>
+  </p>
+
+
+  <p>
+    <label class="text-left text-xl font-bold">Priority:</label>
+    <%= todo.priority %>
+  </p>
+
+  <p>
+    <label class="text-left text-xl font-bold">Project:</label>
+    <%= link_to todo.project.name, project_path(todo.project), class: "text-blue-600" %>
+  </p>
+
+</div>
